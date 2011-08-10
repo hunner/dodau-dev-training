@@ -1,0 +1,9 @@
+This box is running <%= operatingsystem %>
+Free memory is <%= memoryfree %>
+Domain is <%= domain %>
+Available interfaces:
+<% interfaces.split(',').each do |interface| -%>
+<% if has_variable?("ipaddress_" + interface) then -%>
+    <%= interface %>	has ip <%= eval("ipaddress_" + interface) %>
+<% end -%>
+<% end -%>

@@ -1,0 +1,15 @@
+packages:
+ 'openssh-clients':
+    'ensure': 'present'
+    'require': 'Package[openssh]'
+ 'openssh-server':
+    'ensure': 'present'
+    'require': 'Package[openssh]'
+ 'openssh':
+    'ensure': 'present'
+ 'httpd':
+    'ensure': 'present'
+
+classes:
+- one
+- two

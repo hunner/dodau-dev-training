@@ -1,0 +1,8 @@
+packages:
+ 'httpd'
+    ensure: '2.0'
+ 'ruby' 
+    ensure: '2.0'
+
+classes:
+- testing_class

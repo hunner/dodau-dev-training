@@ -1,0 +1,12 @@
+---
+:backends: - yaml
+:logger: console
+:hierarchy: - %{hostname}
+            - env/%{env}
+            - %{netgroup}
+            - default
+:yaml:
+   :datadir: /etc/hieradata
+
+:puppet:
+   :datasource: data
